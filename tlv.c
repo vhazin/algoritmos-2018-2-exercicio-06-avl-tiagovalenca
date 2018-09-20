@@ -29,12 +29,14 @@ void check(int a[], int numeros){
 
   int flag = 1;
 
-  for(int j = numeros - 1; j >= 0; j--){
+  for(int j = numeros -1; j >= 0; j--){
     int direita = 2*j+2;
     int esquerda = 2*j+1;
+    int h = 0;
 
     if(a[j] != -1){
       if(esquerda < numeros && direita < numeros){
+
         if(altura[esquerda] >= altura[direita]){
           altura[j] = altura[esquerda] + 1;
         }else{
