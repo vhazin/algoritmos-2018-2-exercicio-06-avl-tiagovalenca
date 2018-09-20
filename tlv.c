@@ -32,7 +32,6 @@ void check(int a[], int numeros){
   for(int j = numeros -1; j >= 0; j--){
     int direita = 2*j+2;
     int esquerda = 2*j+1;
-    int h = 0;
 
     if(a[j] != -1){
       if(esquerda < numeros && direita < numeros){
