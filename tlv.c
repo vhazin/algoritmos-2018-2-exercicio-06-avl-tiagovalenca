@@ -34,7 +34,7 @@ void check(int a[], int numeros){
     int esquerda = 2*j+1;
 
     if(a[j] != -1){
-      if(esquerda < numeros && direita < numeros){
+      if(direita < numeros){
 
         if(altura[esquerda] >= altura[direita]){
           altura[j] = altura[esquerda] + 1;
