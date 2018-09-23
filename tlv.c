@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 void check(int a[], int numeros);
 
@@ -23,9 +24,7 @@ int main(void) {
 void check(int a[], int numeros){
   int altura[numeros];
 
-  for(int i = 0; i < numeros; i++){
-    altura[i] = 0;
-  }
+  memset(altura, 0, sizeof altura);
 
   int flag = 1;
 
